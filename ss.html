@@ -2,9 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>example 1 </title>
+    <style>
+        body{background-image: url("https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png")}
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+
+        }
+        #menu{
+            overflow: hidden;
+            background-color: #333;
+            align-content: center;
+        }
+        header{
+
+            float: left;
+        }
+        ul li{
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            list-style-type: none ;
+            float:left;
+            display: inline-block;
+            position: center;
+            padding-right: 12px;
+            text-decoration-color: chocolate;
+
+        }
+        button{
+            padding: 4px;
+            text-decoration: chocolate
+        ;
+            color: chocolate;
+        }
+    </style>
+    <script>
+        function showForm() {
+            document.getElementById("menu").style.display="block"
+
+
+        }
+        function closeForm() {
+            document.getElementById("menu").style.display="none"
+
+        }
+    </script>
 </head>
 <body>
+<header>
+    <button onclick='showForm()'>open</button>
+   <div id="menu" >
+       <ul>
+           <li><button>home</button></li>
+           <li><button>service</button></li>
+           <li><button>about us</button></li>
+           <li><button>contact us</button></li>
+       </ul>
+       <button onclick='closeForm()'>close</button>
+   </div>
+</header>
+<div id="body">
+    <div id="left">
+
+    </div>
+    <div id="right"></div>
+    <div id="center"></div>
+</div>
+<div id="footer"></div>
+
+
 
 </body>
 </html>
